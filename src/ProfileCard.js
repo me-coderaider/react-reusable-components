@@ -1,8 +1,18 @@
-function ProfileCard(props ){
+// function ProfileCard(props ){
+// 3. 'keys' destructing in the function definition itself i.e 
+// using only specific details, not the entire 'props' object.
+function ProfileCard({title, handle}){
+
+    // 1. 'keys' into multi line variable
+    // const title=props.title;
+    // const handle=props.handle;
+
+    // 2. 'keys' into 1 line variables
+    // const {title, handle}=props;
     return (
         <div>
-            <div>Title is {props.title}</div>
-            <div>Handle is {props.handle}</div>
+            <div>Title is {title}</div>
+            <div>Handle is {handle}</div>
         </div>
     );
 }
